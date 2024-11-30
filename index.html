@@ -2,12 +2,56 @@
 <html lang="en">
   <head>
     <title>Document</title>
-    <link rel="stylesheet" href="css/setup.css" />
-    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        main {
+          width: 100%;
+          background: #333333;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .page {
+            width: min(210mm, 100%);
+            aspect-ratio: 9/16;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            input,
+            textarea {
+              background: none;
+              border: none;
+              padding: 1%;
+              font-size: 1.4dvw;
+              position: absolute;
+              outline: none;
+              resize: none;
+            }
+            input::-webkit-inner-spin-button,
+            input::-webkit-outer-spin-button {
+              display: none;
+            }
+          }
+          #page-1 {
+            background-image: url("../img/Page-1.png");
+          }
+          #page-2 {
+            background-image: url("../img/Page-2.png");
+          }
+        }
+      }
+    </style>
     <main>
       <div id="page-1" class="page">
         <!--Nome-->
@@ -15,7 +59,7 @@
           type="text"
           style="width: 34%; height: 3%; top: 5.7%; left: 56.9%"
           id=""
-          value="Augustus Wayne"
+          value="Anthony Dixon"
         />
         <!--Perfil-->
         <!--Principal-->
@@ -23,14 +67,14 @@
           type="text"
           style="width: 34%; height: 3.1%; top: 9.6%; left: 57.5%"
           id=""
-          value="Autodidata"
+          value="Guardião"
         />
         <!--Complementar-->
         <input
           type="text"
           style="width: 26.4%; height: 3%; top: 14.2%; left: 71%"
           id=""
-          value="Valente"
+          value="Esotérico"
         />
         <!--Aparência-->
         <textarea
@@ -102,7 +146,7 @@
             border: 0.1dvw solid red;
           "
           id=""
-          value="1"
+          value="3"
         />
         <!--Controle-->
         <input
@@ -124,52 +168,54 @@
           type="text"
           style="width: 47.2%; height: 3.2%; top: 54.8%; left: 1.2%"
           id=""
-          value="Antecipação (Bravura)"
+          value=""
         />
         <input
           type="text"
           style="width: 47.2%; height: 3.2%; top: 58.8%; left: 1.2%"
           id=""
-          value="Combate (Bravura)"
+          value=""
         />
         <input
           type="text"
           style="width: 47.2%; height: 3.2%; top: 62.6%; left: 1.2%"
           id=""
-          value="Observar (Instinto)"
+          value=""
         />
         <!--Competências-->
         <input
           type="text"
           style="width: 47.4%; height: 3.5%; top: 54.8%; left: 52%"
           id=""
-          value="Atletismo (Bravura)"
+          value=""
         />
         <input
           type="text"
           style="width: 47.4%; height: 3.5%; top: 58.8%; left: 52%"
           id=""
-          value="Percepção (Instinto)"
+          value=""
         />
         <input
           type="text"
           style="width: 47.4%; height: 3.5%; top: 62.6%; left: 52%"
           id=""
-          value="Rastrear (Instinto)"
+          value=""
         />
         <!--Influência-->
         <textarea
           style="width: 47.3%; height: 9.7%; top: 79.6%; left: 1.2%"
           id=""
         >
-Zona Oeste - Delegacia de polícia</textarea
+Exército dos Estados Unidos (75º Regimento Ranger).
+      </textarea
         >
         <!--Contatos-->
         <textarea
           style="width: 47.1%; height: 9.7%; top: 79.7%; left: 51.7%"
           id=""
         >
-William Carlson (Detetive)</textarea
+Tenente Thomas Smith.
+      </textarea
         >
       </div>
       <div id="page-2" class="page">
@@ -179,15 +225,16 @@ William Carlson (Detetive)</textarea
           id=""
           value=""
         >
-Ela não precisava morrer, o caso já estava resolvido.</textarea
-        >
+Sob meu comando, meu esquadrão foi dizimado.
+        </textarea>
         <!--Obsessão-->
         <textarea
           style="width: 29.2%; height: 14%; top: 40.1%; left: 2.8%"
           id=""
           value=""
         >
-Para reprimir memórias, eu começei a beber muito.</textarea
+Devido ao trauma, acabei desenvolvendo TEPT.
+      </textarea
         >
         <!--Desejo-->
         <textarea
@@ -200,8 +247,9 @@ Para reprimir memórias, eu começei a beber muito.</textarea
           style="width: 64.8%; height: 22.6%; top: 76.2%; left: 18.3%"
           id=""
         >
+Dogtags
 Pontos de destino: 0
-500 mil dólares (Dinheiro Sujo?)</textarea
+</textarea
         >
       </div>
     </main>
